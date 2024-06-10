@@ -8,6 +8,9 @@ $env:POSH_SESSION_DEFAULT_USER = [System.Environment]::UserName
 $DocumentsFolder = [Environment]::GetFolderPath('Personal')
 oh-my-posh init pwsh --config "$DocumentsFolder/PowerShell/Themes/.ohmy.theme.omp.json" | Invoke-Expression
 
+#Install-Module -Name Terminal-Icons -Scope CurrentUser -Force -Repository PSGallery
+Import-Module -Name Terminal-Icons
+
 #Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadLineOption -PredictionSource HistoryAndPlugin
