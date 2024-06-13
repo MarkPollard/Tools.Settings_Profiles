@@ -33,15 +33,24 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "p:black",
           "background": "#9ec3f0",
-          "template": " \uebd8 {{ if eq .User.Type \"servicePrincipal\" }}SP{{ else }}{{ .User.Name }}{{ end }} "
+          "templates": [
+            " \uebd8 {{ if eq .User.Type \"servicePrincipal\" }}SP{{ else }}{{ .User.Name }}{{ end }} ",
+            "{{ if .Name }}:: {{ $vsStrippedName := replaceP \"Visual Studio \" .Name \"\" }}{{ $subStrippedName := replaceP \" Subscription\" $vsStrippedName \"\" }}{{ $msdnStrippedName := replaceP \" with MSDN\" $subStrippedName \"\" }}{{ $msdnStrippedName }}{{ end }} "
+          ]
         },
         {
           "type": "kubectl",
           "style": "diamond",
           "trailing_diamond": "\ue0b4",
           "foreground": "p:black",
+          "foreground_templates": [
+            "{{ if matchP (\"-prod-\") (.Cluster) }}p:red{{ end }}"
+          ],
           "background": "#ebcc34",
-          "template": " {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}"
+          "templates": [
+            " \u2388 {{.Context}} ",
+            "{{if .Namespace}}:: {{.Namespace}}{{end}} "
+          ]
         }
       ]
     },
