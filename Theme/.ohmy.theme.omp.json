@@ -13,7 +13,7 @@
           "style": "diamond",
           "leading_diamond": "\ue0b6",
           "foreground": "p:black",
-          "background": "p:yellow",
+          "background": "p:lightorange",
           "template": " {{ if .SSHSession }}\ueba9 {{ end }}{{ .UserName }} ",
           "properties": {
             "display_default": false
@@ -24,7 +24,7 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
-          "background": "p:yellow",
+          "background": "p:lightorange",
           "template": "\uf0e7 "
         },
         {
@@ -46,7 +46,7 @@
           "foreground_templates": [
             "{{ if matchP (\"-prod-\") (.Cluster) }}p:red{{ end }}"
           ],
-          "background": "#ebcc34",
+          "background": "p:yellow",
           "templates": [
             " \u2388 {{.Context}} ",
             "{{if .Namespace}}:: {{.Namespace}}{{end}} "
@@ -83,7 +83,7 @@
           ],
           "background": "p:green",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:yellow{{ end }}",
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:lightorange{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:red{{ end }}",
             "{{ if gt .Ahead 0 }}#49416D{{ end }}",
             "{{ if gt .Behind 0 }}#7A306C{{ end }}"
@@ -100,7 +100,7 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
-          "background": "#6CA35E",
+          "background": "p:darkgreen",
           "template": "  {{ .Context }} "
         },
         {
@@ -108,7 +108,7 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
-          "background": "#6CA35E",
+          "background": "p:darkgreen",
           "template": "  {{ .Major }} "
         },
         {
@@ -116,7 +116,7 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "foreground": "p:white",
-          "background": "#6CA35E",
+          "background": "p:darkgreen",
           "template": "\ue235 ",
           "properties": {
             "display_mode": "files",
@@ -159,7 +159,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#007ACC",
+          "foreground": "p:blue",
           "style": "plain",
           "template": "\u276f ",
           "type": "text"
@@ -202,20 +202,22 @@
   "transient_prompt": {
     "foreground": "p:black",
     "background": "transparent",
-    "template": "<p:yellow,transparent>\ue0b6</><,p:yellow> {{ .Folder }} </><p:yellow,transparent>\ue0b0</> "
+    "template": "<p:lightorange,transparent>\ue0b6</><,p:lightorange> {{ .Folder }} </><p:lightorange,transparent>\ue0b0</> "
   },
   "secondary_prompt": {
-    "foreground": "p:black",
+    "foreground": "p:blue",
     "background": "transparent",
-    "template": "<p:yellow,transparent>\ue0b6</><,p:yellow> > </><p:yellow,transparent>\ue0b0</> "
+    "template": "\u276f "
   },
   "palette": {
     "black": "#262B44",
     "blue": "#4B95E9",
     "green": "#59C9A5",
+    "darkgreen": "#6CA35E",
     "orange": "#F07623",
     "red": "#D81E5B",
     "white": "#E0DEF4",
-    "yellow": "#F3AE35"
+    "lightorange": "#F3AE35",
+    "yellow": "#EBCC34"
   }
 }
