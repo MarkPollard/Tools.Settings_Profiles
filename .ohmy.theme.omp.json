@@ -43,7 +43,7 @@
           "background": "#9ec3f0",
           "templates": [
             " \uebd8 {{ if eq .User.Type \"servicePrincipal\" }}SP{{ else }}{{ .User.Name }}{{ end }} ",
-            "{{ if .Name }}:: {{ $vsStrippedName := replaceP \"Visual Studio \" .Name \"\" }}{{ $subStrippedName := replaceP \" Subscription\" $vsStrippedName \"\" }}{{ $msdnStrippedName := replaceP \" with MSDN\" $subStrippedName \"\" }}{{ $msdnStrippedName }}{{ end }} "
+            "{{ if .Name }}:: {{ $vsStrippedName := replaceP \"Visual Studio \" .Name \"VS-\" }}{{ $subStrippedName := replaceP \" Subscription\" $vsStrippedName \"-Sub\" }}{{ $msdnStrippedName := replaceP \" with MSDN\" $subStrippedName \"-Sub\" }}{{ $msdnStrippedName }}{{ end }} "
           ]
         },
         {
