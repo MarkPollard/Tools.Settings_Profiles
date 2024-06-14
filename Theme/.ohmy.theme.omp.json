@@ -9,15 +9,12 @@
       "alignment": "left",
       "segments": [
         {
-          "type": "session",
+          "type": "os",
           "style": "diamond",
           "leading_diamond": "\ue0b6",
           "foreground": "p:black",
           "background": "p:lightorange",
-          "template": " {{ if .SSHSession }}\ueba9 {{ end }}{{ .UserName }} ",
-          "properties": {
-            "display_default": false
-          }
+          "template": "{{.Icon}} "
         },
         {
           "type": "root",
@@ -26,6 +23,17 @@
           "foreground": "p:white",
           "background": "p:lightorange",
           "template": "\uf0e7 "
+        },
+        {
+          "type": "session",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "p:black",
+          "background": "p:lightorange",
+          "template": "{{ if .SSHSession }}\ueba9 {{ end }}{{ .UserName }} ",
+          "properties": {
+            "display_default": false
+          }
         },
         {
           "type": "az",
