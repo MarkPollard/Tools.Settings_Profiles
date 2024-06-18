@@ -80,6 +80,43 @@
           }
         },
         {
+          "type": "docker",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "p:white",
+          "background": "p:darkgreen",
+          "template": "  "
+        },
+        {
+          "type": "dotnet",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "p:white",
+          "background": "p:darkgreen",
+          "template": "  {{ .Major }} "
+        },
+        {
+          "type": "python",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "p:white",
+          "background": "p:darkgreen",
+          "template": " \ue235 {{ .Major }} ",
+          "properties": {
+            "display_mode": "files",
+            "fetch_version": false,
+            "fetch_virtual_env": false
+          }
+        },
+        {
+          "type": "java",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b0",
+          "foreground": "p:white",
+          "background": "p:darkgreen",
+          "template": "  {{ .Major }}"
+        },
+        {
           "type": "git",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
@@ -101,35 +138,6 @@
             "branch_max_length": 25,
             "fetch_status": true,
             "fetch_upstream_icon": true
-          }
-        },
-        {
-          "type": "docker",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "foreground": "p:white",
-          "background": "p:darkgreen",
-          "template": "  {{ .Context }} "
-        },
-        {
-          "type": "dotnet",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "foreground": "p:white",
-          "background": "p:darkgreen",
-          "template": "  {{ .Major }} "
-        },
-        {
-          "type": "python",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "foreground": "p:white",
-          "background": "p:darkgreen",
-          "template": "\ue235 ",
-          "properties": {
-            "display_mode": "files",
-            "fetch_version": false,
-            "fetch_virtual_env": false
           }
         },
         {
