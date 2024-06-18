@@ -52,7 +52,7 @@
           "trailing_diamond": "\ue0b4",
           "foreground": "p:black",
           "foreground_templates": [
-            "{{ if matchP (\"-prod-\") (.Cluster) }}p:red{{ end }}"
+            "{{ if matchP (\"-[pP][rR][oO][dD]-\") (.Cluster) }}p:red{{ end }}"
           ],
           "background": "p:yellow",
           "templates": [
