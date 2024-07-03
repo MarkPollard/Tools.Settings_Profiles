@@ -19,16 +19,17 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 #Install-Module CompletionPredictor -Scope CurrentUser -Force
 Import-Module CompletionPredictor
 
+New-Item -Path Alias: -Name d -Value docker -Options "AllScope" | Out-Null
 New-Item -Path Alias: -Name k -Value kubectl -Options "AllScope" | Out-Null
 New-Item -Path Alias: -Name hl -Value helm -Options "AllScope" | Out-Null
 New-Item -Path Alias: -Name tf -Value terraform -Options "AllScope" | Out-Null
 New-Item -Path Alias: -Name g -Value git -Options "AllScope" | Out-Null
 
 #Install-Module WslInterop -Force
-#Import-WslCommand ansible-vault
 Import-WslCommand ssh
 Import-WslCommand ssh-keygen
 Import-WslCommand grep
 Import-WslCommand curl
 Import-WslCommand vi
 Import-WslCommand openssl
+#Import-WslCommand ansible-vault

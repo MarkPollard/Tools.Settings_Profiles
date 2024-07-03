@@ -1,0 +1,12 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "azureResourceGroups.groupBy": "resourceGroup",
+    "editor.fontFamily": "JetBrainsMono NF",
+    "editor.fontSize": 14.0,
+    "editor.lineHeight": 1.6,
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+    "terminal.integrated.shellIntegration.enabled": false,
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Atom One Dark"
+}
