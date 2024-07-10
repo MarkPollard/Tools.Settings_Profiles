@@ -2,11 +2,137 @@
     "security.workspace.trust.untrustedFiles": "open",
     "azureResourceGroups.groupBy": "resourceGroup",
     "editor.fontFamily": "JetBrainsMono NF",
-    "editor.fontSize": 14.0,
-    "editor.lineHeight": 1.6,
+    "editor.fontSize": 13.0,
+    "editor.lineHeight": 1.7,
     "editor.fontLigatures": true,
-    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+    "editor.semanticHighlighting.enabled": false,
+    "terminal.integrated.fontFamily": "JetBrainsMono NF",
     "terminal.integrated.shellIntegration.enabled": false,
+    "explorer.compactFolders": false,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+      ".env": ".env, .*.env, .env.*",
+      "appsettings.json": "appsettings.json, appsettings.*.json",
+      "*.csproj": "*.csproj, nuget.config",
+      "*.razor": "$(capture).razor.css, $(capture).razor.cs",
+      "*.cshtml": "$(capture).cshtml.cs"
+    },
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Atom One Dark"
+    "workbench.colorTheme": "Dark",
+    "workbench.colorCustomizations": {
+      "[Dark]": {
+        "activityBar.background": "#292929",
+        "activityBar.activeBackground": "#181818",
+        "activityBar.activeBorder": "#FFFFFF",
+        "activityBarBadge.background": "#CBCFD1",
+        "activityBarBadge.foreground": "#181818",
+        "editor.background": "#181818",
+        "editor.foreground": "#C8C8C8",
+        "editor.lineHighlightBackground": "#1D2746",
+        "editor.selectionBackground": "#1B4A87",
+        "editorGroupHeader.tabsBackground": "#292929",
+        "tab.activeBorderTop": "#FFFFFF",
+        "menu.background": "#292929",
+        "menu.foreground": "#D1D0CD",
+        "menu.selectionBackground": "#194176",
+        "sideBar.background": "#181818",
+        "sideBarSectionHeader.background": "#292929",
+        "statusBar.background": "#181818",
+        "titleBar.activeBackground": "#292929",
+        "titleBar.inactiveBackground": "#292929",
+        "titleBar.activeForeground": "#A1A1A1",
+      }
+    },
+    "editor.tokenColorCustomizations": {
+      "[Dark]": {
+        "comments": "#808080",
+        "strings": "#E06C75",
+        "functions": "#E5C07B",
+        "keywords": "#61AFEF",
+        "variables": "#DCDCDC",
+        "types": "#98C379",
+        "textMateRules": [
+          {
+            "scope": "comment",
+            "settings": {
+              "foreground": "#808080",
+              "fontStyle": "italic"
+            }
+          },
+          {
+            "scope": "string.quoted.double", 
+            "settings": {
+              "foreground": "#E06C75"
+            }
+          },
+          {
+            "scope": "entity.name.function", 
+            "settings": {
+              "foreground": "#E5C07B"
+            }
+          },
+          {
+            "scope": "variable.other.object.property", 
+            "settings": {
+              "foreground": "#EDD2A0"
+            }
+          },
+          {
+            "scope":[
+              "entity.name.variable.local"
+            ],
+            "settings": {
+              "foreground": "#DCDCDC"
+            }
+          },
+          {
+            "scope":[
+              "entity.name.variable.field"
+            ],
+            "settings": {
+              "foreground": "#D2D2D2"
+            }
+          },
+          {
+            "scope": "entity.name.type.namespace", 
+            "settings": {
+              "foreground": "#CAE0BA"
+            }
+          },
+          {
+            "scope": "entity.name.class, entity.name.type", 
+            "settings": {
+              "foreground": "#98C379"
+            }
+          }
+        ]
+      }
+    },
+    "editor.semanticTokenColorCustomizations": {
+      "[Dark]": {
+        "rules": {
+          "comment": "#808080",
+          "string": "#E06C75",
+          "stringVerbatim": "#E06C75",
+          "function": "#E5C07B",
+          "keyword": "#61AFEF",
+          "variable": "#DCDCDC",
+          "namespace": "#CAE0BA",
+          "enum": "#98C379",
+          "interface": "#98C379",
+          "struct": "#98C379",
+          "type": "#98C379",
+          "class": "#98C379",
+          "class.readonly": {
+            "foreground": "#98C379",
+            "fontStyle": "bold italic"
+          },
+          "*.declaration" : {
+            "fontStyle": "bold"
+          },
+          "*.readonly" : "#DCDCDC"
+        }
+      }
+    }
 }
