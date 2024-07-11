@@ -14,11 +14,13 @@
   "explorer.fileNesting.patterns": {
     ".env": ".env, .*.env, .env.*",
     "appsettings.json": "appsettings.json, appsettings.*.json",
+    "*.sln": "$(capture).sln, $(capture).sln.DotSettings",
     "*.csproj": "*.csproj, nuget.config",
     "*.razor": "$(capture).razor.css, $(capture).razor.cs",
     "*.cshtml": "$(capture).cshtml.cs"
   },
   "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Visual Studio Dark",
   "workbench.colorCustomizations": {
     "[Visual Studio Dark]": {
