@@ -7,8 +7,7 @@
   "editor.fontLigatures": true,
   "editor.insertSpaces": true,
   "[json]": {
-    "editor.tabSize": 2,
-    //"editor.detectIndentation": false,
+    "editor.tabSize": 2
   },
   "editor.semanticHighlighting.enabled": true,
   "terminal.integrated.fontFamily": "JetBrainsMono NF",
@@ -44,12 +43,14 @@
       "menu.foreground": "#D1D0CD",
       "menu.selectionBackground": "#194176",
       "sideBar.background": "#181818",
+      "sideBar.border": "#292929",
       "sideBarSectionHeader.background": "#292929",
       "statusBar.background": "#181818",
       "titleBar.activeBackground": "#292929",
       "titleBar.inactiveBackground": "#292929",
       "titleBar.activeForeground": "#A1A1A1",
-      "terminal.background": "#143143"
+      "terminal.background": "#143143",
+      "focusBorder": "#292929",
     }
   },
   "editor.tokenColorCustomizations": {
