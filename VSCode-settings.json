@@ -5,6 +5,11 @@
   "editor.fontSize": 13.0,
   "editor.lineHeight": 1.7,
   "editor.fontLigatures": true,
+  "editor.insertSpaces": true,
+  "[json]": {
+    "editor.tabSize": 2,
+    //"editor.detectIndentation": false,
+  },
   "editor.semanticHighlighting.enabled": true,
   "terminal.integrated.fontFamily": "JetBrainsMono NF",
   "terminal.integrated.shellIntegration.enabled": false,
@@ -63,25 +68,25 @@
           }
         },
         {
-          "scope": "string.quoted.double", 
+          "scope": "string.quoted.double",
           "settings": {
             "foreground": "#D27D80"
           }
         },
         {
-          "scope": "entity.name.function", 
+          "scope": "entity.name.function",
           "settings": {
             "foreground": "#E5C07B"
           }
         },
         {
-          "scope": "variable.other.object.property", 
+          "scope": "variable.other.object.property",
           "settings": {
             "foreground": "#EDD2A0"
           }
         },
         {
-          "scope":[
+          "scope": [
             "entity.name.variable.local"
           ],
           "settings": {
@@ -89,7 +94,7 @@
           }
         },
         {
-          "scope":[
+          "scope": [
             "entity.name.variable.parameter"
           ],
           "settings": {
@@ -97,7 +102,7 @@
           }
         },
         {
-          "scope":[
+          "scope": [
             "entity.name.variable.field"
           ],
           "settings": {
@@ -105,15 +110,21 @@
           }
         },
         {
-          "scope": "entity.name.type.namespace", 
+          "scope": "entity.name.type.namespace",
           "settings": {
             "foreground": "#CAE0BA"
           }
         },
         {
-          "scope": "entity.name.class, entity.name.type", 
+          "scope": "entity.name.class, entity.name.type",
           "settings": {
             "foreground": "#98C379"
+          }
+        },
+        {
+          "scope": "support.type.property-name.json",
+          "settings": {
+            "foreground": "#D7BA7D"
           }
         }
       ]
@@ -148,10 +159,10 @@
           "foreground": "#98C379",
           "fontStyle": "bold italic"
         },
-        "*.declaration" : {
+        "*.declaration": {
           "fontStyle": "bold"
         },
-        "*.readonly" : "#DCDCDC"
+        "*.readonly": "#DCDCDC"
       }
     }
   }
