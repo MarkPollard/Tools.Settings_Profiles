@@ -49,6 +49,7 @@
       "titleBar.activeBackground": "#292929",
       "titleBar.inactiveBackground": "#292929",
       "titleBar.activeForeground": "#A1A1A1",
+      "terminal.background": "#143143"
     }
   },
   "editor.tokenColorCustomizations": {
