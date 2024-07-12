@@ -19,9 +19,10 @@
     ".env": ".env, .*.env, .env.*",
     "appsettings.json": "appsettings.json, appsettings.*.json",
     "*.sln": "$(capture).sln, $(capture).sln.DotSettings",
-    "*.csproj": "*.csproj, nuget.config",
+    "*.csproj": "$(capture).csproj, $(capture).csproj.user",
     "*.razor": "$(capture).razor.css, $(capture).razor.cs",
-    "*.cshtml": "$(capture).cshtml.cs"
+    "*.cshtml": "$(capture).cshtml.cs",
+    "*.cs": "$(capture).Designer.cs"
   },
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
