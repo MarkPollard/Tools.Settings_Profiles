@@ -25,7 +25,7 @@ New-Item -Path Alias: -Name hl -Value helm -Options "AllScope" | Out-Null
 New-Item -Path Alias: -Name tf -Value terraform -Options "AllScope" | Out-Null
 New-Item -Path Alias: -Name g -Value git -Options "AllScope" | Out-Null
 
-#Install-Module WslInterop -Force
+#Install-Module WslInterop -Scope CurrentUser -Force
 Import-WslCommand ssh
 Import-WslCommand ssh-keygen
 Import-WslCommand grep
