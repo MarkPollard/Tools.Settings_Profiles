@@ -168,5 +168,8 @@
         "*.readonly": "#DCDCDC"
       }
     }
-  }
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.wrapTabs": true,
+  "dotnet.automaticallySyncWithActiveItem": true
 }
